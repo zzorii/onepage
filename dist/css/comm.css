@@ -1,0 +1,183 @@
+:root {
+  --sm: 768px;
+  --md: 992px;
+  --lg: 1200px
+  --bs-primary: rgb(102, 16, 242);
+  --bs-primary-rgb: 102, 16, 242;
+}
+
+.section-g {
+  padding: 150px 0;
+}
+.section-g h2 {
+  font-size: 50px;
+}
+
+#header {
+  height: 70px;
+  padding: 0 30px;
+}
+
+#jumbotron {
+  position: relative;
+}
+#jumbotron img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+#jumbotron .img-text-box {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 1;
+}
+#jumbotron .img-text-1 {
+  font-size: 40px;
+}
+#jumbotron .img-text-2 {
+  font-size: 15px;
+}
+#jumbotron .search {
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+#jumbotron .search input {
+  position: relative;
+  border: none;
+  width: 200px;
+  border-bottom: 1.5px solid #fff;
+  background: none;
+}
+#jumbotron .search input::-moz-placeholder {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 17px;
+  color: #fff;
+}
+#jumbotron .search input::placeholder {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 17px;
+  color: #fff;
+}
+#jumbotron .search:hover input {
+  border-bottom: 1.5px solid rgb(241, 224, 127);
+}
+#jumbotron .search:hover input::-moz-placeholder {
+  color: rgb(241, 224, 127);
+}
+#jumbotron .search:hover input::placeholder {
+  color: rgb(241, 224, 127);
+}
+#jumbotron .search:hover a::before {
+  color: rgb(241, 224, 127);
+}
+#jumbotron .search a::before {
+  content: "\f002";
+  position: absolute;
+  top: -3px;
+  left: 55%;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 22px;
+  color: #fff;
+}
+
+#main {
+  position: relative;
+}
+#main #about {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: #fff;
+}
+#main #gallery {
+  position: absolute;
+  top: 2000px;
+  left: 0;
+  width: 100%;
+  height: 170vh;
+  background: #fff;
+  z-index: 1;
+}
+#main #gallery .sec-photo img {
+  width: 306px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #gallery .sec-photo .img-box-2 {
+  margin-top: 24px;
+}
+#main #gallery .sec-photo .img-box-3 {
+  margin-top: 24px;
+}
+#main #gallery .sec-photo .img-box-3 img {
+  width: 636px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #gallery .sec-photo .img-box-3 .photo-txt {
+  text-align: right;
+}
+#main #gallery .sec-photo .img-box-3 .photo-txt span {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 50px;
+}
+#main #gallery .sec-photo .img-box-3 .photo-txt p {
+  margin: 20px 0 50px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 30px;
+}
+#main #gallery .sec-photo .img-box-3 .photo-txt .more-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+#main #gallery .sec-photo .img-box-3 .photo-txt a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  background: #000;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+#main #gallery .sec-photo .img-box-3 .photo-txt a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #000;
+  color: #000;
+}
+#main #gallery .img-thumb img {
+  position: relative;
+}
+#main #gallery .img-thumb img:hover img::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}/*# sourceMappingURL=comm.css.map */
