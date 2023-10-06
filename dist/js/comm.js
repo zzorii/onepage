@@ -21,3 +21,48 @@ window.addEventListener(
     }
   }, 300)
 );
+
+// AOS
+AOS.init();
+
+// 화면bg전환
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  "#about",
+  {
+    backgroundColor: gsap.getProperty("html", "--light"),
+  },
+  {
+    scrollTrigger: {
+      trigger: ".color-dark",
+      scrub: true,
+      end: "bottom bottom",
+    },
+    backgroundColor: gsap.getProperty("html", "--dark"),
+  }
+);
+
+// 애니메이션 작동
+const animatedElement = document.querySelector(".about-ani-txt");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 700) {
+    animatedElement.style.webkitAnimation =
+      "focus-in-contract 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+    animatedElement.style.animation =
+      "focus-in-contract 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+  }
+});
+const animatedElement2 = document.querySelector(".about-ani");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 700) {
+    animatedElement2.style.webkitAnimation = "bounce-in-left 3s both";
+    animatedElement2.style.animation = "bounce-in-left 3s both";
+  }
+});
