@@ -66,3 +66,32 @@ window.addEventListener("scroll", () => {
     animatedElement2.style.animation = "bounce-in-left 3s both";
   }
 });
+// 마우스 효과
+// const text = document.querySelector(".mouse-text");
+// text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+// const element = document.querySelectorAll("span");
+// for (let i = 0; i < element.length; i++) {
+//   element[i].style.transform = "rotate(" + i * 18 + "deg)";
+// }
+
+// document.addEventListener("mousemove", function (e) {
+//   text.style.left = e.pageX + "px";
+//   text.style.top = e.pageY + "px";
+// });
+
+const text = document.querySelector(".mouse-text");
+text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+const element = document.querySelectorAll("span");
+for (let i = 0; i < element.length; i++) {
+  if (window.CP.shouldStopExecution(0)) break;
+  element[i].style.transform = "rotate(" + i * 18 + "deg)";
+}
+window.CP.exitedLoop(0);
+
+document.addEventListener("mousemove", function (e) {
+  text.style.left = e.pageX + "px";
+  text.style.top = e.pageY + "px";
+});
+//# sourceURL=pen.js
