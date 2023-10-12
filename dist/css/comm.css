@@ -362,7 +362,7 @@
   font-size: 25px;
   color: #fff;
 }
-#main #service {
+#main #community {
   position: absolute;
   top: 490vh;
   left: 0;
@@ -372,17 +372,48 @@
   background: #000;
   z-index: 1;
 }
-
-.mouse-ani {
-  position: relative;
-  display: flex;
-  justify-content: center;
+#main #community .community-wrap {
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
+}
+#main #community .community-wrap h2 {
+  margin-bottom: 56px;
+}
+#main #community .community-wrap .community-lst {
+  display: flex;
+}
+#main #community .community-wrap .community-lst h3 {
+  font-size: 22px;
+}
+#main #community .community-wrap .community-lst .community-lst1 {
+  margin: 0 20px;
+}
+#main #community .community-wrap .community-lst .community-lst1 a {
+  display: block;
+  width: 200px;
+  height: 300px;
+  background: #fff;
+}
+#main #community .community-wrap .community-lst .community-lst2 {
+  margin: 0 20px;
+}
+#main #community .community-wrap .community-lst .community-lst2 a {
+  display: block;
+  width: 200px;
+  height: 300px;
+  background: #fff;
+}
+#main #community .community-wrap .community-lst .community-lst3 {
+  margin: 0 20px;
+}
+#main #community .community-wrap .community-lst .community-lst3 a {
+  display: block;
+  width: 200px;
+  height: 300px;
+  background: #fff;
 }
 
-.mouse-ani .mouse-text {
+.mouse-text {
   position: absolute;
   color: #3b8686;
   font-size: 1.5em;
@@ -402,9 +433,25 @@
     transform: rotate(0deg);
   }
 }
-.mouse-ani .mouse-text span {
+.mouse-text span {
   position: absolute;
   display: inline-block;
   transform-origin: 0 100px;
   top: -100px;
+}
+
+.bg-waves {
+  display: block;
+  height: 74px;
+  /*Uncomment to see the buffer render area*/
+  /*height:150px;*/
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.bg-waves #canvas-waves {
+  display: block;
 }/*# sourceMappingURL=comm.css.map */

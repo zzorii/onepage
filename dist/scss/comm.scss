@@ -482,7 +482,7 @@
       }
     }
   }
-  #service {
+  #community {
     position: absolute;
     top: 490vh;
     left: 0;
@@ -491,19 +491,59 @@
     color: #fff;
     background: #000;
     z-index: 1;
+    .community-wrap {
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin-bottom: 56px;
+      }
+      .community-lst {
+        display: flex;
+        h3 {
+          font-size: 22px;
+        }
+        .community-lst1 {
+          margin: 0 20px;
+          a {
+            display: block;
+            width: 200px;
+            height: 300px;
+            background: #fff;
+          }
+        }
+        .community-lst2 {
+          margin: 0 20px;
+          a {
+            display: block;
+            width: 200px;
+            height: 300px;
+            background: #fff;
+          }
+        }
+        .community-lst3 {
+          margin: 0 20px;
+          a {
+            display: block;
+            width: 200px;
+            height: 300px;
+            background: #fff;
+          }
+        }
+      }
+    }
   }
 }
 
-.mouse-ani {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
-}
+// .mouse-ani {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   overflow: hidden;
+// }
 
-.mouse-ani .mouse-text {
+.mouse-text {
   position: absolute;
   color: #3b8686;
   font-size: 1.5em;
@@ -522,10 +562,28 @@
   }
 }
 
-.mouse-ani .mouse-text span {
+.mouse-text span {
   position: absolute;
   // text-transform: uppercase;
   display: inline-block;
   transform-origin: 0 100px;
   top: -100px;
+}
+
+.bg-waves {
+  display: block;
+  height: 74px;
+  /*Uncomment to see the buffer render area*/
+  /*height:150px;*/
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.bg-waves #canvas-waves {
+  display: block;
 }
