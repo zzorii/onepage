@@ -379,43 +379,74 @@
 #main #community .community-wrap h2 {
   margin-bottom: 56px;
 }
-#main #community .community-wrap .community-lst {
+#main #community .community-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+#main #community .card-lst {
+  list-style: none;
+  position: relative;
+}
+#main #community .card-lst:before {
+  content: "";
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+#main #community .card-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+#main #community .card-lst:hover .card-img {
+  transform: scale(1.05) translateZ(0);
+}
+#main #community .community-card:hover > .card-lst:not(:hover) .card-img {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+#main #community .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
+  flex-direction: column;
+  padding: 24px;
 }
-#main #community .community-wrap .community-lst h3 {
-  font-size: 22px;
+#main #community .card-category {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
 }
-#main #community .community-wrap .community-lst .community-lst1 {
-  margin: 0 20px;
-}
-#main #community .community-wrap .community-lst .community-lst1 a {
-  display: block;
-  width: 200px;
-  height: 300px;
-  background: #fff;
-}
-#main #community .community-wrap .community-lst .community-lst2 {
-  margin: 0 20px;
-}
-#main #community .community-wrap .community-lst .community-lst2 a {
-  display: block;
-  width: 200px;
-  height: 300px;
-  background: #fff;
-}
-#main #community .community-wrap .community-lst .community-lst3 {
-  margin: 0 20px;
-}
-#main #community .community-wrap .community-lst .community-lst3 a {
-  display: block;
-  width: 200px;
-  height: 300px;
-  background: #fff;
+#main #community .card-heading {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+  margin: 50% 0;
 }
 
 .mouse-text {
   position: absolute;
-  color: #3b8686;
+  color: rgb(255, 196, 108);
   font-size: 1.5em;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -442,11 +473,12 @@
 
 .bg-waves {
   display: block;
+  width: 100%;
   height: 74px;
   /*Uncomment to see the buffer render area*/
   /*height:150px;*/
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   overflow: hidden;
   transform: translate(-50%, -50%);
