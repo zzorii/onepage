@@ -60,6 +60,7 @@
     width: 100%;
     height: 100%;
     margin-top: -70px;
+    object-fit: cover;
   }
   .img-text-box {
     content: "";
@@ -149,6 +150,8 @@
 }
 #main {
   position: relative;
+  overflow: hidden;
+  height: 590vh;
   #about {
     position: absolute;
     top: 90vh;
@@ -606,7 +609,7 @@
 // footer bg
 .bg-waves {
   display: block;
-  width: 100%;
+  // width: 100%;
   height: 74px;
   /*Uncomment to see the buffer render area*/
   /*height:150px;*/
