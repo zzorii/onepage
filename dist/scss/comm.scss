@@ -49,12 +49,119 @@
   .nav-link {
     margin: 0 20px;
     font-size: 20px;
-    font-weight: 600;
   }
 }
 #jumbotron {
   height: 100vh;
   position: relative;
+  .sgv-ani {
+    position: relative;
+    .main-ani-box {
+      position: absolute;
+      width: 150px;
+      z-index: 100;
+    }
+    .main-ani1 {
+      top: 430px;
+      right: 30px;
+      width: 250px;
+      .cls-1 {
+        fill: #1c1c1b;
+      }
+    }
+    .main-ani2 {
+      top: 620px;
+      right: 350px;
+      width: 100px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .main-ani3 {
+      top: 550px;
+      right: 650px;
+      width: 130px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .main-ani4 {
+      top: 220px;
+      right: 20px;
+      width: 100px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .main-ani5 {
+      top: 670px;
+      left: 700px;
+      width: 100px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .main-ani6 {
+      top: 150px;
+      left: 30px;
+      width: 100px;
+      .cls-1 {
+        fill: #f2eee4;
+      }
+    }
+    .main-ani7 {
+      top: 0px;
+      left: 100px;
+      width: 100px;
+      .cls-1 {
+        fill: #f2eee4;
+      }
+    }
+    .main-ani8 {
+      top: 610px;
+      left: 440px;
+      width: 80px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .main-ani9 {
+      top: 700px;
+      left: 150px;
+      width: 80px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .main-ani10 {
+      top: 680px;
+      right: 400px;
+      width: 100px;
+      .cls-1 {
+        fill: #00c1cc;
+      }
+    }
+    .bg-sky {
+      position: absolute;
+      top: -1280px;
+      left: -250px;
+      width: 100%;
+      z-index: 10;
+      .cls-1 {
+        fill: #00c1cc !important;
+      }
+    }
+    .bg-beige {
+      position: absolute;
+      top: 360px;
+      left: 60px;
+      width: 2050px;
+      transform: rotate(-13deg);
+      .cls-1 {
+        fill: #f2eee4 !important;
+      }
+    }
+  }
   img {
     position: fixed;
     width: 100%;
@@ -74,7 +181,7 @@
     align-items: center;
     justify-content: center;
     font-family: "Nanum Gothic", sans-serif;
-    background: rgba(0, 0, 0, 0.3);
+    // background: rgba(0, 0, 0, 0.3);
     color: #fff;
     z-index: 1;
     p {

@@ -27,12 +27,119 @@
 #header .nav-link {
   margin: 0 20px;
   font-size: 20px;
-  font-weight: 600;
 }
 
 #jumbotron {
   height: 100vh;
   position: relative;
+}
+#jumbotron .sgv-ani {
+  position: relative;
+}
+#jumbotron .sgv-ani .main-ani-box {
+  position: absolute;
+  width: 150px;
+  z-index: 100;
+}
+#jumbotron .sgv-ani .main-ani1 {
+  top: 430px;
+  right: 30px;
+  width: 250px;
+}
+#jumbotron .sgv-ani .main-ani1 .cls-1 {
+  fill: #1c1c1b;
+}
+#jumbotron .sgv-ani .main-ani2 {
+  top: 620px;
+  right: 350px;
+  width: 100px;
+}
+#jumbotron .sgv-ani .main-ani2 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani3 {
+  top: 550px;
+  right: 650px;
+  width: 130px;
+}
+#jumbotron .sgv-ani .main-ani3 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani4 {
+  top: 220px;
+  right: 20px;
+  width: 100px;
+}
+#jumbotron .sgv-ani .main-ani4 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani5 {
+  top: 670px;
+  left: 700px;
+  width: 100px;
+}
+#jumbotron .sgv-ani .main-ani5 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani6 {
+  top: 150px;
+  left: 30px;
+  width: 100px;
+}
+#jumbotron .sgv-ani .main-ani6 .cls-1 {
+  fill: #f2eee4;
+}
+#jumbotron .sgv-ani .main-ani7 {
+  top: 0px;
+  left: 100px;
+  width: 100px;
+}
+#jumbotron .sgv-ani .main-ani7 .cls-1 {
+  fill: #f2eee4;
+}
+#jumbotron .sgv-ani .main-ani8 {
+  top: 610px;
+  left: 440px;
+  width: 80px;
+}
+#jumbotron .sgv-ani .main-ani8 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani9 {
+  top: 700px;
+  left: 150px;
+  width: 80px;
+}
+#jumbotron .sgv-ani .main-ani9 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani10 {
+  top: 680px;
+  right: 400px;
+  width: 100px;
+}
+#jumbotron .sgv-ani .main-ani10 .cls-1 {
+  fill: #00c1cc;
+}
+#jumbotron .sgv-ani .bg-sky {
+  position: absolute;
+  top: -1280px;
+  left: -250px;
+  width: 100%;
+  z-index: 10;
+}
+#jumbotron .sgv-ani .bg-sky .cls-1 {
+  fill: #00c1cc !important;
+}
+#jumbotron .sgv-ani .bg-beige {
+  position: absolute;
+  top: 360px;
+  left: 60px;
+  width: 2050px;
+  transform: rotate(-13deg);
+}
+#jumbotron .sgv-ani .bg-beige .cls-1 {
+  fill: #f2eee4 !important;
 }
 #jumbotron img {
   position: fixed;
@@ -54,7 +161,6 @@
   align-items: center;
   justify-content: center;
   font-family: "Nanum Gothic", sans-serif;
-  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   z-index: 1;
 }
