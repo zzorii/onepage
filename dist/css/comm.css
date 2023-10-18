@@ -9,10 +9,12 @@
 }
 
 .section-g {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 .section-g h2 {
-  font-size: 50px;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: left;
 }
 
 #header {
@@ -42,15 +44,15 @@
   z-index: 100;
 }
 #jumbotron .sgv-ani .main-ani1 {
-  top: 430px;
-  right: 30px;
+  top: 150px;
+  right: 480px;
   width: 250px;
 }
 #jumbotron .sgv-ani .main-ani1 .cls-1 {
   fill: #1c1c1b;
 }
 #jumbotron .sgv-ani .main-ani2 {
-  top: 620px;
+  top: 150px;
   right: 350px;
   width: 100px;
 }
@@ -58,9 +60,9 @@
   fill: #00c1cc;
 }
 #jumbotron .sgv-ani .main-ani3 {
-  top: 550px;
-  right: 650px;
-  width: 130px;
+  top: 0;
+  right: 120px;
+  width: 100px;
 }
 #jumbotron .sgv-ani .main-ani3 .cls-1 {
   fill: #00c1cc;
@@ -74,8 +76,8 @@
   fill: #00c1cc;
 }
 #jumbotron .sgv-ani .main-ani5 {
-  top: 670px;
-  left: 700px;
+  top: 0;
+  left: 800px;
   width: 100px;
 }
 #jumbotron .sgv-ani .main-ani5 .cls-1 {
@@ -91,35 +93,47 @@
 }
 #jumbotron .sgv-ani .main-ani7 {
   top: 0px;
-  left: 100px;
-  width: 100px;
+  left: 130px;
+  width: 90px;
 }
 #jumbotron .sgv-ani .main-ani7 .cls-1 {
   fill: #f2eee4;
 }
 #jumbotron .sgv-ani .main-ani8 {
-  top: 610px;
-  left: 440px;
-  width: 80px;
+  top: -40px;
+  left: 536px;
+  width: 70px;
 }
 #jumbotron .sgv-ani .main-ani8 .cls-1 {
-  fill: #00c1cc;
+  fill: #f2eee4;
 }
 #jumbotron .sgv-ani .main-ani9 {
-  top: 700px;
-  left: 150px;
+  top: 300px;
+  right: 230px;
   width: 80px;
 }
 #jumbotron .sgv-ani .main-ani9 .cls-1 {
   fill: #00c1cc;
 }
 #jumbotron .sgv-ani .main-ani10 {
-  top: 680px;
+  top: 88px;
   right: 400px;
   width: 100px;
 }
 #jumbotron .sgv-ani .main-ani10 .cls-1 {
   fill: #00c1cc;
+}
+#jumbotron .sgv-ani .main-ani11 {
+  top: 0;
+  left: 0;
+  width: 30%;
+}
+#jumbotron .sgv-ani .main-ani11 .cls-1 {
+  fill: none;
+  stroke: #1c1c1b;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1.25 4;
 }
 #jumbotron .sgv-ani .bg-sky {
   position: absolute;
@@ -133,10 +147,10 @@
 }
 #jumbotron .sgv-ani .bg-beige {
   position: absolute;
-  top: 360px;
-  left: 60px;
-  width: 2050px;
-  transform: rotate(-13deg);
+  bottom: -500px;
+  left: 0;
+  width: 2100px;
+  transform: rotate(-175deg);
 }
 #jumbotron .sgv-ani .bg-beige .cls-1 {
   fill: #f2eee4 !important;
@@ -149,41 +163,46 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-#jumbotron .img-text-box {
+#jumbotron .img-txt-box {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: "Nanum Gothic", sans-serif;
-  color: #fff;
+  background: rgba(248, 243, 243, 0.5);
+}
+#jumbotron .main-txt-wrap {
+  position: relative;
+}
+#jumbotron .main-txt-wrap .img-text-1 {
+  position: absolute;
+  top: 23vh;
+  left: 67vh;
   z-index: 1;
-}
-#jumbotron .img-text-box p {
-  margin-bottom: 0;
-}
-#jumbotron .txt-middle {
-  display: flex;
-}
-#jumbotron .img-text-1 {
-  font-size: 70px;
-}
-#jumbotron .img-text-2 {
-  margin: 0 15px;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 800;
+  letter-spacing: -5px;
 }
-#jumbotron .img-text-3 {
-  margin-top: -15px;
-  font-size: 100px;
+#jumbotron .main-txt-wrap .img-text-2 {
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 150px;
+  font-weight: 900;
 }
-#jumbotron .img-text-4 {
-  font-size: 15px;
+#jumbotron .main-txt-wrap .img-text-3 {
+  position: absolute;
+  top: 265px;
+  left: 50%;
+  transform: translateX(-49%);
+  z-index: 1;
+  font-size: 150px;
+  font-weight: 900;
+  color: #00c1cc;
 }
 #jumbotron .search {
   position: absolute;
@@ -197,22 +216,22 @@
 #jumbotron .search input {
   position: relative;
   border: none;
-  width: 200px;
-  border-bottom: 1.5px solid #fff;
+  width: 280px;
+  border-bottom: 2px solid #000;
   background: none;
 }
 #jumbotron .search input::-moz-placeholder {
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 17px;
-  color: #fff;
+  font-size: 25px;
+  color: #000;
 }
 #jumbotron .search input::placeholder {
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 17px;
-  color: #fff;
+  font-size: 25px;
+  color: #000;
 }
 #jumbotron .search:hover input {
-  border-bottom: 1.5px solid rgb(241, 224, 127);
+  border-bottom: 2px solid rgb(241, 224, 127);
 }
 #jumbotron .search:hover input::-moz-placeholder {
   color: rgb(241, 224, 127);
@@ -229,12 +248,12 @@
 #jumbotron .search a::before {
   content: "\f002";
   position: absolute;
-  top: -3px;
+  top: -11px;
   right: 55%;
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 22px;
-  color: #fff;
+  font-size: 30px;
+  color: #000;
 }
 
 #main {
@@ -556,7 +575,7 @@
 
 .mouse-text {
   position: absolute;
-  color: rgb(255, 196, 108);
+  color: hwb(183 0% 20%);
   font-size: 1.5em;
   -webkit-user-select: none;
      -moz-user-select: none;

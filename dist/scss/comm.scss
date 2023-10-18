@@ -22,11 +22,14 @@
 }
 // $md: 768px;
 .section-g {
-  padding: 150px 0;
+  padding: 100px 0;
   h2 {
-    font-size: 50px;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: left;
   }
 }
+
 // #body {
 //   position: relative;
 // }
@@ -62,15 +65,15 @@
       z-index: 100;
     }
     .main-ani1 {
-      top: 430px;
-      right: 30px;
+      top: 150px;
+      right: 480px;
       width: 250px;
       .cls-1 {
         fill: #1c1c1b;
       }
     }
     .main-ani2 {
-      top: 620px;
+      top: 150px;
       right: 350px;
       width: 100px;
       .cls-1 {
@@ -78,9 +81,9 @@
       }
     }
     .main-ani3 {
-      top: 550px;
-      right: 650px;
-      width: 130px;
+      top: 0;
+      right: 120px;
+      width: 100px;
       .cls-1 {
         fill: #00c1cc;
       }
@@ -94,8 +97,8 @@
       }
     }
     .main-ani5 {
-      top: 670px;
-      left: 700px;
+      top: 0;
+      left: 800px;
       width: 100px;
       .cls-1 {
         fill: #00c1cc;
@@ -111,34 +114,47 @@
     }
     .main-ani7 {
       top: 0px;
-      left: 100px;
-      width: 100px;
+      left: 130px;
+      width: 90px;
       .cls-1 {
         fill: #f2eee4;
       }
     }
     .main-ani8 {
-      top: 610px;
-      left: 440px;
-      width: 80px;
+      top: -40px;
+      left: 536px;
+      width: 70px;
       .cls-1 {
-        fill: #00c1cc;
+        fill: #f2eee4;
       }
     }
     .main-ani9 {
-      top: 700px;
-      left: 150px;
+      top: 300px;
+      right: 230px;
       width: 80px;
       .cls-1 {
         fill: #00c1cc;
       }
     }
     .main-ani10 {
-      top: 680px;
+      top: 88px;
       right: 400px;
       width: 100px;
       .cls-1 {
         fill: #00c1cc;
+      }
+    }
+    .main-ani11 {
+      // position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      .cls-1 {
+        fill: none;
+        stroke: #1c1c1b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 1.25 4;
       }
     }
     .bg-sky {
@@ -153,10 +169,10 @@
     }
     .bg-beige {
       position: absolute;
-      top: 360px;
-      left: 60px;
-      width: 2050px;
-      transform: rotate(-13deg);
+      bottom: -500px;
+      left: 0;
+      width: 2100px;
+      transform: rotate(-175deg);
       .cls-1 {
         fill: #f2eee4 !important;
       }
@@ -169,42 +185,48 @@
     margin-top: -70px;
     object-fit: cover;
   }
-  .img-text-box {
+  .img-txt-box {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-family: "Nanum Gothic", sans-serif;
-    // background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    z-index: 1;
-    p {
-      margin-bottom: 0;
+    background: rgba(248, 243, 243, 0.5);
+    // color: #000;
+  }
+  .main-txt-wrap {
+    position: relative;
+
+    .img-text-1 {
+      position: absolute;
+      top: 23vh;
+      left: 67vh;
+      z-index: 1;
+      font-size: 50px;
+      font-weight: 800;
+      letter-spacing: -5px;
     }
-  }
-  .txt-middle {
-    display: flex;
-  }
-  .img-text-1 {
-    font-size: 70px;
-  }
-  .img-text-2 {
-    margin: 0 15px;
-    font-size: 70px;
-    font-weight: 800;
-  }
-  .img-text-3 {
-    margin-top: -15px;
-    font-size: 100px;
-  }
-  .img-text-4 {
-    font-size: 15px;
+    .img-text-2 {
+      position: absolute;
+      top: 260px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      font-size: 150px;
+      font-weight: 900;
+    }
+    .img-text-3 {
+      position: absolute;
+      top: 265px;
+      left: 50%;
+      transform: translateX(-49%);
+      z-index: 1;
+      font-size: 150px;
+      font-weight: 900;
+      color: #00c1cc;
+    }
   }
   .search {
     position: absolute;
@@ -218,18 +240,18 @@
       position: relative;
       // text-align: center;
       border: none;
-      width: 200px;
-      border-bottom: 1.5px solid #fff;
+      width: 280px;
+      border-bottom: 2px solid #000;
       background: none;
       &::placeholder {
         font-family: "Nanum Gothic", sans-serif;
-        font-size: 17px;
-        color: #fff;
+        font-size: 25px;
+        color: #000;
       }
     }
     &:hover {
       input {
-        border-bottom: 1.5px solid rgb(241, 224, 127);
+        border-bottom: 2px solid rgb(241, 224, 127);
         &::placeholder {
           color: rgb(241, 224, 127);
         }
@@ -245,12 +267,12 @@
       &::before {
         content: "\f002";
         position: absolute;
-        top: -3px;
+        top: -11px;
         right: 55%;
         font-family: "Line Awesome Free";
         font-weight: 900;
-        font-size: 22px;
-        color: #fff;
+        font-size: 30px;
+        color: #000;
       }
     }
   }
@@ -688,7 +710,7 @@
 // mouse event
 .mouse-text {
   position: absolute;
-  color: rgb(255, 196, 108);
+  color: hwb(183 0% 20%);
   font-size: 1.5em;
   user-select: none;
   pointer-events: none;
