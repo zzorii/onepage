@@ -81,6 +81,25 @@ document.addEventListener("mousemove", function (e) {
   text.style.top = e.pageY + "px";
 });
 
+// best
+$(".best-box").on("click", function () {
+  $(".best-card").toggleClass("flipped");
+});
+$(".best-box2").on("click", function () {
+  $(".best-card2").toggleClass("flipped");
+});
+$(".best-box3").on("click", function () {
+  $(".best-card3").toggleClass("flipped");
+});
+$(".best-box4").on("click", function () {
+  $(".best-card4").toggleClass("flipped");
+});
+$(".best-box5").on("click", function () {
+  $(".best-card5").toggleClass("flipped");
+});
+$(".best-box6").on("click", function () {
+  $(".best-card6").toggleClass("flipped");
+});
 // test
 
 class CanvasWaves {
