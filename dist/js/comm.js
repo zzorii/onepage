@@ -42,6 +42,87 @@ gsap.fromTo(
     backgroundColor: gsap.getProperty("html", "--dark"),
   }
 );
+// txt-ani
+// gsap.registerPlugin(ScrollTrigger);
+
+// const sections = document.querySelectorAll(".title");
+// const demoWrapper = document.querySelector(".container");
+
+// const showDemo = () => {
+//   document.body.style.overflow = "auto";
+//   window.scrollTo(0, 0);
+
+//   // ScrollTrigger 설정
+//   const triggerConfig = {
+//     scrub: 1,
+//   };
+
+//   sections.forEach((section, index) => {
+//     const w = section.querySelector(".wrap-thumb");
+//     let x, xEnd;
+
+//     if (index === 0) {
+//       x = "500px";
+//       xEnd = "-500px";
+//     } else {
+//       x = "0%";
+//       xEnd = "0%";
+//     }
+
+//     // 첫 번째 섹션에 대해서만 ScrollTrigger 적용
+//     if (index === 0) {
+//       gsap.fromTo(
+//         w,
+//         { x },
+//         {
+//           x: xEnd,
+//           scrollTrigger: triggerConfig,
+//         }
+//       );
+//     }
+//   });
+// };
+gsap.registerPlugin(ScrollTrigger);
+
+const sections = document.querySelectorAll(".title");
+const demoWrapper = document.querySelector(".container");
+
+const showDemo = () => {
+  document.body.style.overflow = "auto";
+  window.scrollTo(0, 0);
+
+  // ScrollTrigger 설정
+  const triggerConfig = {
+    scrub: 1,
+  };
+
+  sections.forEach((section, index) => {
+    const w = section.querySelector(".wrap-thumb");
+    let x, xEnd;
+
+    if (index === 0) {
+      x = "0%"; // 초기 위치를 오른쪽 끝으로 설정
+      xEnd = "100%"; // 스크롤 완료 시 왼쪽 끝으로 이동
+    } else {
+      x = "0%"; // 나머지 섹션의 시작 위치를 0으로 설정
+      xEnd = "0%"; // 나머지 섹션의 종료 위치도 0으로 설정
+    }
+
+    // 첫 번째 섹션에 대해서만 ScrollTrigger 적용
+    if (index === 0) {
+      gsap.fromTo(
+        w,
+        { x },
+        {
+          x: xEnd,
+          scrollTrigger: triggerConfig,
+        }
+      );
+    }
+  });
+};
+
+showDemo();
 
 // 애니메이션 작동
 const animatedElement = document.querySelector(".about-ani-txt");
