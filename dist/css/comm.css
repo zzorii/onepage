@@ -15,7 +15,7 @@
   width: 100%;
   font-size: 100px;
   font-weight: 800;
-  text-align: left;
+  text-align: center;
 }
 
 #header {
@@ -411,11 +411,46 @@
 }
 #main #about .container {
   overflow: hidden;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+#main #about .container .title {
+  display: flex !important;
+  justify-content: center !important;
+}
+#main #about .container h2 {
+  color: #000;
+  overflow: hidden;
+  border-right: 0.05em solid #fff;
+  white-space: nowrap;
+  animation: none;
+  opacity: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+    opacity: 1;
+  }
+  50% {
+    border-color: #000;
+    opacity: 1;
+  }
 }
 #main #about .row {
   justify-content: space-between;
 }
 #main #about .about-ani-txt {
+  font-family: "Hahmlet", serif;
   font-weight: 600;
   font-size: 50px;
   animation: none;
@@ -556,6 +591,40 @@
 }
 #main #best .container {
   overflow: hidden;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+#main #best .container .title {
+  display: flex !important;
+  justify-content: center !important;
+}
+#main #best .container h2 {
+  color: #fff;
+  overflow: hidden;
+  border-right: 0.05em solid #000;
+  white-space: nowrap;
+  animation: none;
+  opacity: 0;
+}
+@keyframes typing2 {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes blink-caret2 {
+  from, to {
+    border-color: transparent;
+    opacity: 1;
+  }
+  50% {
+    border-color: #fff;
+    opacity: 1;
+  }
 }
 #main #best .row {
   justify-content: space-between;
@@ -783,6 +852,42 @@
   background: var(--light);
   z-index: 1;
 }
+#main #gallery .container {
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+#main #gallery .container .title {
+  display: flex !important;
+  justify-content: center !important;
+}
+#main #gallery .container h2 {
+  color: #000;
+  overflow: hidden;
+  border-right: 0.05em solid #fff;
+  white-space: nowrap;
+  animation: none;
+  opacity: 0;
+}
+@keyframes typing3 {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes blink-caret3 {
+  from, to {
+    border-color: transparent;
+    opacity: 1;
+  }
+  50% {
+    border-color: #000;
+    opacity: 1;
+  }
+}
 #main #gallery .sec-photo .img-thumb p {
   display: none;
 }
@@ -936,6 +1041,37 @@
 }
 #main #community .community-wrap h2 {
   margin-bottom: 56px;
+}
+#main #community .container {
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+#main #community .container .title {
+  display: flex !important;
+  justify-content: center !important;
+}
+#main #community .container h2 {
+  color: #fff;
+  overflow: hidden;
+  border-right: 0.05em solid #000;
+  white-space: nowrap;
+  animation: typing4 3.5s steps(20, end), blink-caret4 0.5s step-end 4;
+}
+@keyframes typing4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret4 {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
 }
 #main #community .community-card {
   display: grid;
