@@ -82,7 +82,7 @@ const animatedElement6 = document.querySelector(".community-txt");
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= 3500) {
+  if (scrollPosition >= 4000) {
     animatedElement6.style.animation =
       "typing4 3.5s steps(20, end) forwards, blink-caret4 0.5s step-end 4 forwards";
   }
@@ -101,16 +101,6 @@ window.addEventListener("scroll", () => {
       "focus-in-contract 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
   }
 });
-// const animatedElement2 = document.querySelector(".about-ani");
-
-// window.addEventListener("scroll", () => {
-//   const scrollPosition = window.scrollY;
-
-//   if (scrollPosition >= 700) {
-//     animatedElement2.style.webkitAnimation = "bounce-in-left 3s both";
-//     animatedElement2.style.animation = "bounce-in-left 3s both";
-//   }
-// });
 
 // 마우스 효과
 const text = document.querySelector(".mouse-text");

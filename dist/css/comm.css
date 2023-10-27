@@ -619,10 +619,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #47525d;
 }
 #main #best .best-box .best-card .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box .best-card h3 {
+  margin: 30px 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#main #best .best-box .best-card p {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 #main #best .best-box .best-card.flipped {
   transform: rotateY(180deg);
@@ -654,10 +667,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #47525d;
 }
 #main #best .best-box2 .best-card2 .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box2 .best-card2 h3 {
+  margin: 30px 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#main #best .best-box2 .best-card2 p {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 #main #best .best-box2 .best-card2.flipped {
   transform: rotateY(180deg);
@@ -689,10 +715,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #47525d;
 }
 #main #best .best-box3 .best-card3 .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box3 .best-card3 h3 {
+  margin: 30px 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#main #best .best-box3 .best-card3 p {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 #main #best .best-box3 .best-card3.flipped {
   transform: rotateY(180deg);
@@ -728,10 +767,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #47525d;
 }
 #main #best .best-box4 .best-card4 .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box4 .best-card4 h3 {
+  margin: 30px 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#main #best .best-box4 .best-card4 p {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 #main #best .best-box4 .best-card4.flipped {
   transform: rotateY(180deg);
@@ -763,10 +815,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #47525d;
 }
 #main #best .best-box5 .best-card5 .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box5 .best-card5 h3 {
+  margin: 30px 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#main #best .best-box5 .best-card5 p {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 #main #best .best-box5 .best-card5.flipped {
   transform: rotateY(180deg);
@@ -798,10 +863,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #47525d;
 }
 #main #best .best-box6 .best-card6 .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box6 .best-card6 h3 {
+  margin: 30px 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#main #best .best-box6 .best-card6 p {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 #main #best .best-box6 .best-card6.flipped {
   transform: rotateY(180deg);
@@ -863,79 +941,6 @@
 #main #gallery .sec-photo .img-box-2 {
   margin-top: 24px;
 }
-#main #gallery .sec-photo .img-box-3 {
-  margin-top: 24px;
-}
-#main #gallery .sec-photo .img-box-3 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#main #gallery .sec-photo .img-box-3 .photo-txt {
-  text-align: right;
-}
-#main #gallery .sec-photo .img-box-3 .photo-txt span {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 50px;
-}
-#main #gallery .sec-photo .img-box-3 .photo-txt p {
-  margin: 20px 0 50px;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 30px;
-}
-#main #gallery .sec-photo .img-box-3 .more-btn {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0;
-  width: 150px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 3px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-#main #gallery .sec-photo .img-box-3 .spot {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-#main #gallery .sec-photo .img-box-3 .svg-wrapper {
-  margin-top: 0;
-  position: relative;
-  width: 150px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 3px;
-}
-#main #gallery .sec-photo .img-box-3 .shape {
-  stroke-width: 6px;
-  fill: transparent;
-  stroke: #383838;
-  stroke-dasharray: 85 400;
-  stroke-dashoffset: -220;
-  transition: 1s all ease;
-}
-#main #gallery .sec-photo .img-box-3 .text {
-  margin-top: -35px;
-  text-align: center;
-}
-#main #gallery .sec-photo .img-box-3 .text a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 800;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 18px;
-}
-#main #gallery .sec-photo .img-box-3 .svg-wrapper:hover .shape {
-  stroke-dasharray: 50 0;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke: #000;
-}
 #main #gallery .sec-photo .img-thumb:hover {
   position: relative;
 }
@@ -987,6 +992,81 @@
   font-weight: 900;
   font-size: 25px;
   color: #fff;
+}
+#main #gallery .sec-photo .gallery-you-tit {
+  margin-top: 20px;
+  font-size: 50px;
+}
+#main #gallery .sec-photo .youtube-box {
+  display: flex;
+  width: 100%;
+}
+#main #gallery .sec-photo .youtube-box .youtube-thumb {
+  width: 560px;
+  height: 315px;
+  margin-right: 30px;
+  background: #979797;
+}
+#main #gallery .sec-photo .photo-txt span {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 50px;
+}
+#main #gallery .sec-photo .photo-txt p {
+  margin: 20px 0 50px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 30px;
+}
+#main #gallery .sec-photo .more-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#main #gallery .sec-photo .spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#main #gallery .sec-photo .svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+}
+#main #gallery .sec-photo .shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #383838;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#main #gallery .sec-photo .text {
+  margin-top: -35px;
+  text-align: center;
+}
+#main #gallery .sec-photo .text a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18px;
+}
+#main #gallery .sec-photo .svg-wrapper:hover .shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #000;
 }
 #main #community {
   position: absolute;
@@ -1051,6 +1131,7 @@
 #main #community .card-lst {
   list-style: none;
   position: relative;
+  height: 400px;
 }
 #main #community .card-lst:before {
   content: "";
@@ -1088,7 +1169,7 @@
 }
 #main #community .card-category {
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
@@ -1096,19 +1177,19 @@
 }
 #main #community .card-heading {
   color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 35px;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
   font-weight: 600;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.4;
+  line-height: 1.5;
   word-spacing: 100vw;
-  margin: 50% 0;
+  margin: 5% 0;
 }
 
 .mouse-text {
   position: absolute;
-  color: #fcff33;
+  color: #33503c;
   font-size: 1.5em;
   -webkit-user-select: none;
      -moz-user-select: none;
