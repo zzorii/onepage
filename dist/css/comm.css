@@ -416,7 +416,7 @@
 }
 #main #about .container .title {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: center;
 }
 #main #about .container h2 {
   color: #000;
@@ -450,8 +450,8 @@
   justify-content: space-between;
 }
 #main #about .about-ani-txt {
-  font-family: "Hahmlet", serif;
-  font-weight: 600;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
   font-size: 50px;
   animation: none;
   filter: blur(12px);
@@ -469,58 +469,21 @@
   }
 }
 #main #about .about-p {
-  margin-top: 80px;
+  margin-top: 60px;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -1px;
 }
 #main #about .about-p-2 {
+  justify-content: flex-start !important;
   margin-top: 50px;
-  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
 }
 #main #about .about-ani {
   position: relative;
-  background-position: center;
-  background-size: 160%;
-  animation: none;
-  opacity: 0;
-  transform: translateX(-600px);
-  animation-timing-function: ease-in;
-}
-@keyframes bounce-in-left {
-  0% {
-    transform: translateX(-600px);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    transform: translateX(-68px);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: translateX(-28px);
-    animation-timing-function: ease-in;
-  }
-  90% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: translateX(-8px);
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
 }
 #main #about .about-svg-1 {
   position: absolute;
@@ -569,7 +532,7 @@
   top: 185px;
   right: 0;
   width: 350px;
-  z-index: -1;
+  z-index: 0;
   transform: scaleX(-1) rotate(15deg);
 }
 #main #about .about-svg-6 {
@@ -1055,22 +1018,27 @@
   overflow: hidden;
   border-right: 0.05em solid #000;
   white-space: nowrap;
-  animation: typing4 3.5s steps(20, end), blink-caret4 0.5s step-end 4;
+  animation: none;
+  opacity: 0;
 }
 @keyframes typing4 {
   from {
     width: 0;
+    opacity: 1;
   }
   to {
     width: 100%;
+    opacity: 1;
   }
 }
 @keyframes blink-caret4 {
   from, to {
     border-color: transparent;
+    opacity: 1;
   }
   50% {
     border-color: #fff;
+    opacity: 1;
   }
 }
 #main #community .community-card {

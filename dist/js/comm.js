@@ -43,87 +43,7 @@ gsap.fromTo(
   }
 );
 // txt-ani
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// const sections = document.querySelectorAll(".title");
-// const demoWrapper = document.querySelector(".container");
-
-// const showDemo = () => {
-//   document.body.style.overflow = "auto";
-//   window.scrollTo(0, 0);
-
-//   // ScrollTrigger 설정
-//   const triggerConfig = {
-//     scrub: 1,
-//   };
-
-//   sections.forEach((section, index) => {
-//     const w = section.querySelector(".wrap-thumb");
-//     let x, xEnd;
-
-//     if (index === 0) {
-//       x = "500px";
-//       xEnd = "-500px";
-//     } else {
-//       x = "0%";
-//       xEnd = "0%";
-//     }
-
-//     // 첫 번째 섹션에 대해서만 ScrollTrigger 적용
-//     if (index === 0) {
-//       gsap.fromTo(
-//         w,
-//         { x },
-//         {
-//           x: xEnd,
-//           scrollTrigger: triggerConfig,
-//         }
-//       );
-//     }
-//   });
-// };
-// gsap.registerPlugin(ScrollTrigger);
-
-// const sections = document.querySelectorAll(".title");
-// const demoWrapper = document.querySelector(".container");
-
-// const showDemo = () => {
-//   document.body.style.overflow = "auto";
-//   window.scrollTo(0, 0);
-
-//   // ScrollTrigger 설정
-//   const triggerConfig = {
-//     scrub: 1,
-//   };
-
-//   sections.forEach((section, index) => {
-//     const w = section.querySelector(".wrap-thumb");
-//     let x, xEnd;
-
-//     if (index === 0) {
-//       x = "0%"; // 초기 위치를 오른쪽 끝으로 설정
-//       xEnd = "100%"; // 스크롤 완료 시 왼쪽 끝으로 이동
-//     } else {
-//       x = "0%"; // 나머지 섹션의 시작 위치를 0으로 설정
-//       xEnd = "0%"; // 나머지 섹션의 종료 위치도 0으로 설정
-//     }
-
-//     // 첫 번째 섹션에 대해서만 ScrollTrigger 적용
-//     if (index === 0) {
-//       gsap.fromTo(
-//         w,
-//         { x },
-//         {
-//           x: xEnd,
-//           scrollTrigger: triggerConfig,
-//         }
-//       );
-//     }
-//   });
-// };
-
-// showDemo();
+// about
 const animatedElement3 = document.querySelector(".about-txt");
 
 window.addEventListener("scroll", () => {
@@ -134,24 +54,37 @@ window.addEventListener("scroll", () => {
       "typing 3.5s steps(20, end) forwards, blink-caret 0.5s step-end 3 forwards";
   }
 });
+// best
 const animatedElement4 = document.querySelector(".best-txt");
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= 1400) {
+  if (scrollPosition >= 1500) {
     animatedElement4.style.animation =
       "typing2 3.5s steps(20, end) forwards, blink-caret2 0.5s step-end 3 forwards";
   }
 });
+// gallery
 const animatedElement5 = document.querySelector(".gallery-txt");
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= 2100) {
+  if (scrollPosition >= 2500) {
     animatedElement5.style.animation =
       "typing3 3.5s steps(20, end) forwards, blink-caret3 0.5s step-end 4 forwards";
+  }
+});
+// community
+const animatedElement6 = document.querySelector(".community-txt");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 3500) {
+    animatedElement6.style.animation =
+      "typing4 3.5s steps(20, end) forwards, blink-caret4 0.5s step-end 4 forwards";
   }
 });
 
@@ -168,16 +101,16 @@ window.addEventListener("scroll", () => {
       "focus-in-contract 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
   }
 });
-const animatedElement2 = document.querySelector(".about-ani");
+// const animatedElement2 = document.querySelector(".about-ani");
 
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
+// window.addEventListener("scroll", () => {
+//   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= 700) {
-    animatedElement2.style.webkitAnimation = "bounce-in-left 3s both";
-    animatedElement2.style.animation = "bounce-in-left 3s both";
-  }
-});
+//   if (scrollPosition >= 700) {
+//     animatedElement2.style.webkitAnimation = "bounce-in-left 3s both";
+//     animatedElement2.style.animation = "bounce-in-left 3s both";
+//   }
+// });
 
 // 마우스 효과
 const text = document.querySelector(".mouse-text");
