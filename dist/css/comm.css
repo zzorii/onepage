@@ -46,7 +46,7 @@
 }
 #jumbotron .sgv-container .main-ani1 {
   top: 115px;
-  right: 500px;
+  right: 23%;
   width: 250px;
   transform: rotate(-20deg);
 }
@@ -84,7 +84,7 @@
 }
 #jumbotron .sgv-container .main-ani2 {
   top: 150px;
-  right: 350px;
+  right: 18rem;
   width: 100px;
   animation: rotation2 2s infinite linear;
   transform-origin: left;
@@ -255,7 +255,7 @@
 }
 #jumbotron .sgv-container .main-ani10 {
   top: 88px;
-  right: 400px;
+  right: 20rem;
   width: 100px;
   animation: rotation10 2s infinite linear;
   transform-origin: left;
@@ -278,7 +278,7 @@
   position: absolute;
   top: -1280px;
   left: -250px;
-  width: 100%;
+  width: 118.75rem;
   z-index: 10;
 }
 #jumbotron .sgv-container .bg-sky .cls-1 {
@@ -317,8 +317,8 @@
 }
 #jumbotron .main-txt-wrap .img-text-1 {
   position: absolute;
-  top: 23vh;
-  left: 67vh;
+  top: 14rem;
+  left: 34rem;
   z-index: 1;
   font-size: 50px;
   font-weight: 800;
@@ -345,8 +345,9 @@
 }
 #jumbotron .search {
   position: absolute;
-  top: 75vh;
-  left: 85vh;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -553,6 +554,7 @@
   background: #000;
 }
 #main #best .container {
+  padding: 0;
   overflow: hidden;
   /* The typing effect */
   /* The typewriter cursor effect */
@@ -568,6 +570,169 @@
   white-space: nowrap;
   animation: none;
   opacity: 0;
+}
+#main #best .container .best-btn {
+  background: #0096a0;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+#main #best .container .no-touch .best-btn:hover {
+  background: #00a2ad;
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+#main #best .container .no-touch .best-btn:active,
+#main #best .container .best-btn:active {
+  background: #008a93;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}
+#main #best .container .best-card-1 {
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#main #best .container .best-card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 400px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 400px;
+  z-index: 1;
+}
+#main #best .container .best-card .card-image {
+  max-width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #best .container .best-card .card-img-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 75%;
+}
+#main #best .container .best-card .card-txt-tit {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+#main #best .container .best-card .card-txt-tit .toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+#main #best .container .best-card .card-txt-tit .toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+#main #best .container .best-card .card-txt-tit .toggle-info .b-left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+#main #best .container .best-card .card-txt-tit .toggle-info .b-right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+#main #best .container .best-card .card-txt-tit .b-card-tit {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+#main #best .container .best-card .card-txt-tit .b-card-tit small {
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+#main #best .container .best-card .card-description {
+  position: relative;
+  padding: 0 15px 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+#main #best .container .best-card .card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+#main #best .container .best-card .card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+#main #best .container .best-card .flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+#main #best .container .best-card .flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+#main #best .container .best-card-1.showing .best-card {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.88);
+}
+#main #best .container .no-touch .best-card-1.showing .best-card:hover {
+  opacity: 0.94;
+  transform: scale(0.92);
+}
+#main #best .container .best-card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+#main #best .container .best-card.show .card-txt-tit .toggle-info {
+  background: #ff6666 !important;
+}
+#main #best .container .best-card.show .card-txt-tit .toggle-info span {
+  top: 15px;
+}
+#main #best .container .best-card.show .card-txt-tit .toggle-info .b-left {
+  right: 10px;
+}
+#main #best .container .best-card.show .card-txt-tit .toggle-info .b-right {
+  left: 10px;
+}
+#main #best .container .best-card.show .card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+#main #best .container .best-card.show .flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+#main #best .container .best-card.show .flap2 {
+  transition: all 0.3s 0.2s ease-out;
 }
 @keyframes typing2 {
   from {
@@ -593,11 +758,12 @@
   justify-content: space-between;
 }
 #main #best .best-box {
+  position: relative;
   width: 400px;
   height: 250px;
-  position: relative;
   perspective: 800px;
   border-radius: 4px;
+  padding: 0;
 }
 #main #best .best-box .best-card {
   width: 100%;
@@ -615,27 +781,32 @@
   height: 100%;
   backface-visibility: hidden;
   border-radius: 6px;
-  background: #fff;
+  background: #161616;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #47525d;
+  color: #ffffff;
 }
 #main #best .best-box .best-card .back {
   transform: rotateY(180deg);
+}
+#main #best .best-box .best-card .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
 }
 #main #best .best-box .best-card h3 {
   margin: 30px 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main #best .best-box .best-card p {
   padding: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 #main #best .best-box .best-card.flipped {
   transform: rotateY(180deg);
@@ -646,6 +817,7 @@
   position: relative;
   perspective: 800px;
   border-radius: 4px;
+  padding: 0;
 }
 #main #best .best-box2 .best-card2 {
   width: 100%;
@@ -673,17 +845,22 @@
 #main #best .best-box2 .best-card2 .back {
   transform: rotateY(180deg);
 }
+#main #best .best-box2 .best-card2 .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
 #main #best .best-box2 .best-card2 h3 {
   margin: 30px 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main #best .best-box2 .best-card2 p {
   padding: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 #main #best .best-box2 .best-card2.flipped {
   transform: rotateY(180deg);
@@ -694,6 +871,7 @@
   position: relative;
   perspective: 800px;
   border-radius: 4px;
+  padding: 0;
 }
 #main #best .best-box3 .best-card3 {
   width: 100%;
@@ -721,17 +899,22 @@
 #main #best .best-box3 .best-card3 .back {
   transform: rotateY(180deg);
 }
+#main #best .best-box3 .best-card3 .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
 #main #best .best-box3 .best-card3 h3 {
   margin: 30px 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main #best .best-box3 .best-card3 p {
   padding: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 #main #best .best-box3 .best-card3.flipped {
   transform: rotateY(180deg);
@@ -746,6 +929,7 @@
   position: relative;
   perspective: 800px;
   border-radius: 4px;
+  padding: 0;
 }
 #main #best .best-box4 .best-card4 {
   width: 100%;
@@ -773,17 +957,22 @@
 #main #best .best-box4 .best-card4 .back {
   transform: rotateY(180deg);
 }
+#main #best .best-box4 .best-card4 .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
 #main #best .best-box4 .best-card4 h3 {
   margin: 30px 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main #best .best-box4 .best-card4 p {
   padding: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 #main #best .best-box4 .best-card4.flipped {
   transform: rotateY(180deg);
@@ -794,6 +983,7 @@
   position: relative;
   perspective: 800px;
   border-radius: 4px;
+  padding: 0;
 }
 #main #best .best-box5 .best-card5 {
   width: 100%;
@@ -821,17 +1011,22 @@
 #main #best .best-box5 .best-card5 .back {
   transform: rotateY(180deg);
 }
+#main #best .best-box5 .best-card5 .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
 #main #best .best-box5 .best-card5 h3 {
   margin: 30px 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main #best .best-box5 .best-card5 p {
   padding: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 #main #best .best-box5 .best-card5.flipped {
   transform: rotateY(180deg);
@@ -842,6 +1037,7 @@
   position: relative;
   perspective: 800px;
   border-radius: 4px;
+  padding: 0;
 }
 #main #best .best-box6 .best-card6 {
   width: 100%;
@@ -869,17 +1065,22 @@
 #main #best .best-box6 .best-card6 .back {
   transform: rotateY(180deg);
 }
+#main #best .best-box6 .best-card6 .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
 #main #best .best-box6 .best-card6 h3 {
   margin: 30px 0 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main #best .best-box6 .best-card6 p {
   padding: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 #main #best .best-box6 .best-card6.flipped {
   transform: rotateY(180deg);
@@ -993,19 +1194,31 @@
   font-size: 25px;
   color: #fff;
 }
+#main #gallery .sec-photo .gallery-you {
+  display: flex;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
 #main #gallery .sec-photo .gallery-you-tit {
-  margin-top: 20px;
-  font-size: 50px;
+  margin: 70px 20px 0 0;
+  font-size: 70px;
+  writing-mode: vertical-rl;
+  font-weight: 600;
 }
 #main #gallery .sec-photo .youtube-box {
   display: flex;
+  justify-content: space-between;
   width: 100%;
+  margin-top: 70px;
 }
 #main #gallery .sec-photo .youtube-box .youtube-thumb {
   width: 560px;
   height: 315px;
-  margin-right: 30px;
   background: #979797;
+}
+#main #gallery .sec-photo .photo-txt {
+  display: flex;
+  align-items: center;
 }
 #main #gallery .sec-photo .photo-txt span {
   font-family: "Nanum Gothic", sans-serif;

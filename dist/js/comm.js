@@ -65,6 +65,40 @@ window.addEventListener("scroll", () => {
       "typing2 3.5s steps(20, end) forwards, blink-caret2 0.5s step-end 3 forwards";
   }
 });
+$(document).ready(function () {
+  var zindex = 10;
+
+  $(".best-card").click(function (e) {
+    e.preventDefault();
+
+    var isShowing = false;
+
+    if ($(this).hasClass("show")) {
+      isShowing = true;
+    }
+
+    if ($(".best-card-1").hasClass("showing")) {
+      // a card is already in view
+      $(".best-card.show").removeClass("show");
+
+      if (isShowing) {
+        // this card was showing - reset the grid
+        $(".best-card-1").removeClass("showing");
+      } else {
+        // this card isn't showing - get in with it
+        $(this).css({ zIndex: zindex }).addClass("show");
+      }
+
+      zindex++;
+    } else {
+      // no cards in view
+      $(".best-card-1").addClass("showing");
+      $(this).css({ zIndex: zindex }).addClass("show");
+
+      zindex++;
+    }
+  });
+});
 // gallery
 const animatedElement5 = document.querySelector(".gallery-txt");
 

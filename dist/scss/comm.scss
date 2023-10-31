@@ -56,7 +56,7 @@
     }
     .main-ani1 {
       top: 115px;
-      right: 500px;
+      right: 23%;
       width: 250px;
       transform: rotate(-20deg);
       .cls-1 {
@@ -94,7 +94,7 @@
     }
     .main-ani2 {
       top: 150px;
-      right: 350px;
+      right: 18rem;
       width: 100px;
       animation: rotation2 2s infinite linear;
       transform-origin: left;
@@ -271,7 +271,7 @@
     }
     .main-ani10 {
       top: 88px;
-      right: 400px;
+      right: 20rem;
       width: 100px;
       animation: rotation10 2s infinite linear;
       transform-origin: left;
@@ -309,7 +309,7 @@
       position: absolute;
       top: -1280px;
       left: -250px;
-      width: 100%;
+      width: 118.75rem;
       z-index: 10;
       .cls-1 {
         fill: #00c1cc !important;
@@ -349,8 +349,8 @@
 
     .img-text-1 {
       position: absolute;
-      top: 23vh;
-      left: 67vh;
+      top: 14rem;
+      left: 34rem;
       z-index: 1;
       font-size: 50px;
       font-weight: 800;
@@ -378,8 +378,9 @@
   }
   .search {
     position: absolute;
-    top: 75vh;
-    left: 85vh;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -717,6 +718,7 @@
     z-index: 1;
     background: #000;
     .container {
+      padding: 0;
       overflow: hidden;
       .title {
         display: flex !important;
@@ -729,6 +731,193 @@
         white-space: nowrap;
         animation: none;
         opacity: 0;
+      }
+      .best-btn {
+        background: #0096a0;
+        border-radius: 4px;
+        box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+        color: #ffffff;
+        display: inline-block;
+        padding: 6px 30px 8px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+        text-decoration: none;
+        transition: all 0.1s 0s ease-out;
+      }
+
+      .no-touch .best-btn:hover {
+        background: lighten(#0096a0, 2.5);
+        box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+        transform: translateY(-2px);
+        transition: all 0.25s 0s ease-out;
+      }
+
+      .no-touch .best-btn:active,
+      .best-btn:active {
+        background: darken(#0096a0, 2.5);
+        box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+        transform: translate3d(0, 1px, 0);
+        transition: all 0.025s 0s ease-out;
+      }
+
+      .best-card-1 {
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .best-card {
+        background: #ffffff;
+        display: inline-block;
+        margin: 8px;
+        max-width: 400px;
+        perspective: 1000;
+        position: relative;
+        text-align: left;
+        transition: all 0.3s 0s ease-in;
+        width: 400px;
+        z-index: 1;
+
+        .card-image {
+          max-width: 400px;
+          height: 300px;
+          object-fit: cover;
+        }
+
+        .card-img-holder {
+          background: rgba(0, 0, 0, 0.1);
+          height: 0;
+          padding-bottom: 75%;
+        }
+
+        .card-txt-tit {
+          background: #ffffff;
+          padding: 6px 15px 10px;
+          position: relative;
+          z-index: 0;
+
+          .toggle-info {
+            border-radius: 32px;
+            height: 32px;
+            padding: 0;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            width: 32px;
+
+            span {
+              background: #ffffff;
+              display: block;
+              height: 2px;
+              position: absolute;
+              top: 16px;
+              transition: all 0.15s 0s ease-out;
+              width: 12px;
+            }
+
+            .b-left {
+              right: 14px;
+              transform: rotate(45deg);
+            }
+            .b-right {
+              left: 14px;
+              transform: rotate(-45deg);
+            }
+          }
+
+          .b-card-tit {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            small {
+              display: block;
+              font-family: "Noto Sans KR", sans-serif;
+              font-size: 17px;
+              font-weight: 500;
+              letter-spacing: -0.025em;
+            }
+          }
+        }
+
+        .card-description {
+          position: relative;
+          padding: 0 15px 10px;
+          font-family: "Noto Sans KR", sans-serif;
+          font-size: 14px;
+          color: #000;
+        }
+
+        .card-actions {
+          box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+          padding: 10px 15px 20px;
+          text-align: center;
+        }
+
+        .card-flap {
+          background: darken(#ffffff, 15);
+          position: absolute;
+          width: 100%;
+          transform-origin: top;
+          transform: rotateX(-90deg);
+        }
+        .flap1 {
+          transition: all 0.3s 0.3s ease-out;
+          z-index: -1;
+        }
+        .flap2 {
+          transition: all 0.3s 0s ease-out;
+          z-index: -2;
+        }
+      }
+
+      .best-card-1.showing {
+        .best-card {
+          // width: 30%;
+          cursor: pointer;
+          opacity: 0.6;
+          transform: scale(0.88);
+        }
+      }
+
+      .no-touch .best-card-1.showing {
+        .best-card:hover {
+          opacity: 0.94;
+          transform: scale(0.92);
+        }
+      }
+
+      .best-card.show {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+
+        .card-txt-tit {
+          .toggle-info {
+            background: #ff6666 !important;
+            span {
+              top: 15px;
+            }
+            .b-left {
+              right: 10px;
+            }
+            .b-right {
+              left: 10px;
+            }
+          }
+        }
+        .card-flap {
+          background: #ffffff;
+          transform: rotateX(0deg);
+        }
+        .flap1 {
+          transition: all 0.3s 0s ease-out;
+        }
+        .flap2 {
+          transition: all 0.3s 0.2s ease-out;
+        }
       }
 
       /* The typing effect */
@@ -760,11 +949,13 @@
       justify-content: space-between;
     }
     .best-box {
+      position: relative;
       width: 400px;
       height: 250px;
-      position: relative;
       perspective: 800px;
       border-radius: 4px;
+      padding: 0;
+
       .best-card {
         width: 100%;
         height: 100%;
@@ -780,27 +971,32 @@
           height: 100%;
           backface-visibility: hidden;
           border-radius: 6px;
-          background: #fff;
+          background: #161616;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          color: #47525d;
+          color: #ffffff;
         }
         .back {
           transform: rotateY(180deg);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+          }
         }
         h3 {
           margin: 30px 0 10px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 500;
-          font-size: 30px;
+          font-size: 25px;
         }
         p {
           padding: 20px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       .best-card.flipped {
@@ -813,6 +1009,7 @@
       position: relative;
       perspective: 800px;
       border-radius: 4px;
+      padding: 0;
       .best-card2 {
         width: 100%;
         height: 100%;
@@ -837,18 +1034,23 @@
         }
         .back {
           transform: rotateY(180deg);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+          }
         }
         h3 {
           margin: 30px 0 10px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 500;
-          font-size: 30px;
+          font-size: 25px;
         }
         p {
           padding: 20px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       .best-card2.flipped {
@@ -861,6 +1063,7 @@
       position: relative;
       perspective: 800px;
       border-radius: 4px;
+      padding: 0;
       .best-card3 {
         width: 100%;
         height: 100%;
@@ -885,18 +1088,23 @@
         }
         .back {
           transform: rotateY(180deg);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+          }
         }
         h3 {
           margin: 30px 0 10px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 500;
-          font-size: 30px;
+          font-size: 25px;
         }
         p {
           padding: 20px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       .best-card3.flipped {
@@ -913,6 +1121,7 @@
       position: relative;
       perspective: 800px;
       border-radius: 4px;
+      padding: 0;
       .best-card4 {
         width: 100%;
         height: 100%;
@@ -937,18 +1146,23 @@
         }
         .back {
           transform: rotateY(180deg);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+          }
         }
         h3 {
           margin: 30px 0 10px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 500;
-          font-size: 30px;
+          font-size: 25px;
         }
         p {
           padding: 20px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       .best-card4.flipped {
@@ -961,6 +1175,7 @@
       position: relative;
       perspective: 800px;
       border-radius: 4px;
+      padding: 0;
       .best-card5 {
         width: 100%;
         height: 100%;
@@ -985,18 +1200,23 @@
         }
         .back {
           transform: rotateY(180deg);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+          }
         }
         h3 {
           margin: 30px 0 10px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 500;
-          font-size: 30px;
+          font-size: 25px;
         }
         p {
           padding: 20px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       .best-card5.flipped {
@@ -1009,6 +1229,7 @@
       position: relative;
       perspective: 800px;
       border-radius: 4px;
+      padding: 0;
       .best-card6 {
         width: 100%;
         height: 100%;
@@ -1033,18 +1254,23 @@
         }
         .back {
           transform: rotateY(180deg);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+          }
         }
         h3 {
           margin: 30px 0 10px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 500;
-          font-size: 30px;
+          font-size: 25px;
         }
         p {
           padding: 20px;
           font-family: "Noto Sans KR", sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
       .best-card6.flipped {
@@ -1166,24 +1392,32 @@
           color: #fff;
         }
       }
+      .gallery-you {
+        display: flex;
+        border-top: 1px solid #ddd;
+        margin-top: 50px;
+      }
       .gallery-you-tit {
-        margin-top: 20px;
-        font-size: 50px;
+        margin: 70px 20px 0 0;
+        font-size: 70px;
+        writing-mode: vertical-rl;
+        font-weight: 600;
       }
       .youtube-box {
         display: flex;
-
-        // justify-content: space-between;
+        justify-content: space-between;
         width: 100%;
+        margin-top: 70px;
         .youtube-thumb {
           width: 560px;
           height: 315px;
-          margin-right: 30px;
+          // margin-right: 30px;
           background: #979797;
         }
       }
       .photo-txt {
-        // text-align: right;
+        display: flex;
+        align-items: center;
         span {
           font-family: "Nanum Gothic", sans-serif;
           font-size: 50px;
