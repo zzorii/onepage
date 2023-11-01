@@ -26,22 +26,22 @@ window.addEventListener(
 AOS.init();
 
 // 화면bg전환
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.fromTo(
-  "#about",
-  {
-    backgroundColor: gsap.getProperty("html", "--light"),
-  },
-  {
-    scrollTrigger: {
-      trigger: ".color-dark",
-      scrub: true,
-      end: "bottom bottom",
-    },
-    backgroundColor: gsap.getProperty("html", "--dark"),
-  }
-);
+// gsap.fromTo(
+//   "#about",
+//   {
+//     backgroundColor: gsap.getProperty("html", "--light"),
+//   },
+//   {
+//     scrollTrigger: {
+//       trigger: ".color-dark",
+//       scrub: true,
+//       end: "bottom bottom",
+//     },
+//     backgroundColor: gsap.getProperty("html", "--dark"),
+//   }
+// );
 // txt-ani
 // about
 const animatedElement3 = document.querySelector(".about-txt");
@@ -116,7 +116,7 @@ const animatedElement6 = document.querySelector(".community-txt");
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= 4000) {
+  if (scrollPosition >= 4300) {
     animatedElement6.style.animation =
       "typing4 3.5s steps(20, end) forwards, blink-caret4 0.5s step-end 4 forwards";
   }

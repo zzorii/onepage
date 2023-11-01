@@ -84,7 +84,7 @@
 }
 #jumbotron .sgv-container .main-ani2 {
   top: 150px;
-  right: 18rem;
+  right: 21rem;
   width: 100px;
   animation: rotation2 2s infinite linear;
   transform-origin: left;
@@ -255,7 +255,7 @@
 }
 #jumbotron .sgv-container .main-ani10 {
   top: 88px;
-  right: 20rem;
+  right: 24rem;
   width: 100px;
   animation: rotation10 2s infinite linear;
   transform-origin: left;
@@ -286,7 +286,7 @@
 }
 #jumbotron .sgv-container .bg-beige {
   position: absolute;
-  bottom: -500px;
+  bottom: -450px;
   left: 0;
   width: 2100px;
   transform: rotate(-175deg);
@@ -310,7 +310,7 @@
   width: 100%;
   height: 90vh;
   font-family: "Nanum Gothic", sans-serif;
-  background: rgba(248, 243, 243, 0.5);
+  background: rgba(248, 243, 243, 0.3);
 }
 #jumbotron .main-txt-wrap {
   position: relative;
@@ -400,7 +400,7 @@
 #main {
   position: relative;
   overflow: hidden;
-  height: 590vh;
+  height: 620vh;
 }
 #main #about {
   position: absolute;
@@ -472,8 +472,8 @@
 #main #about .about-p {
   margin-top: 60px;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 27px;
+  line-height: 45px;
   letter-spacing: -1px;
 }
 #main #about .about-p-2 {
@@ -551,7 +551,7 @@
   height: 100vh;
   color: #fff;
   z-index: 1;
-  background: #000;
+  background: #f4f9fb;
 }
 #main #best .container {
   padding: 0;
@@ -562,17 +562,19 @@
 #main #best .container .title {
   display: flex !important;
   justify-content: center !important;
+  margin-bottom: 0 !important;
 }
 #main #best .container h2 {
-  color: #fff;
+  color: #000;
   overflow: hidden;
-  border-right: 0.05em solid #000;
+  border-right: 0.05em solid #fff;
   white-space: nowrap;
   animation: none;
   opacity: 0;
+  margin-bottom: 10px;
 }
 #main #best .container .best-btn {
-  background: #0096a0;
+  background: #000;
   border-radius: 4px;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -584,27 +586,26 @@
   transition: all 0.1s 0s ease-out;
 }
 #main #best .container .no-touch .best-btn:hover {
-  background: #00a2ad;
+  background: #060606;
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
 }
 #main #best .container .no-touch .best-btn:active,
 #main #best .container .best-btn:active {
-  background: #008a93;
+  background: black;
   box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
   transform: translate3d(0, 1px, 0);
   transition: all 0.025s 0s ease-out;
 }
 #main #best .container .best-card-1 {
-  margin: 80px auto;
   display: flex;
   justify-content: space-between;
 }
 #main #best .container .best-card {
   background: #ffffff;
   display: inline-block;
-  margin: 8px;
+  margin: 50px 0;
   max-width: 400px;
   perspective: 1000;
   position: relative;
@@ -612,6 +613,7 @@
   transition: all 0.3s 0s ease-in;
   width: 400px;
   z-index: 1;
+  box-shadow: 0 10px 30px #e4edf0;
 }
 #main #best .container .best-card .card-image {
   max-width: 400px;
@@ -650,15 +652,15 @@
 }
 #main #best .container .best-card .card-txt-tit .toggle-info .b-left {
   right: 14px;
-  transform: rotate(45deg);
+  transform: rotate(45deg) !important;
 }
 #main #best .container .best-card .card-txt-tit .toggle-info .b-right {
   left: 14px;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) !important;
 }
 #main #best .container .best-card .card-txt-tit .b-card-tit {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.05em;
   margin: 0;
@@ -671,6 +673,8 @@
   font-size: 17px;
   font-weight: 500;
   letter-spacing: -0.025em;
+  margin-top: 5px;
+  color: #666;
 }
 #main #best .container .best-card .card-description {
   position: relative;
@@ -681,7 +685,7 @@
 }
 #main #best .container .best-card .card-actions {
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
-  padding: 10px 15px 20px;
+  padding: 10px 15px 10px;
   text-align: center;
 }
 #main #best .container .best-card .card-flap {
@@ -713,7 +717,7 @@
   transform: scale(1) !important;
 }
 #main #best .container .best-card.show .card-txt-tit .toggle-info {
-  background: #ff6666 !important;
+  background: #000 !important;
 }
 #main #best .container .best-card.show .card-txt-tit .toggle-info span {
   top: 15px;
@@ -750,7 +754,7 @@
     opacity: 1;
   }
   50% {
-    border-color: #fff;
+    border-color: #000;
     opacity: 1;
   }
 }
@@ -1085,16 +1089,26 @@
 #main #best .best-box6 .best-card6.flipped {
   transform: rotateY(180deg);
 }
+#main #best .best-txt-2 {
+  text-align: right;
+  margin-top: 90px;
+  margin-left: 62%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
 #main #gallery {
   position: absolute;
   top: 290vh;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 230vh;
   background: var(--light);
   z-index: 1;
 }
 #main #gallery .container {
+  padding: 0;
   /* The typing effect */
   /* The typewriter cursor effect */
 }
@@ -1200,34 +1214,83 @@
   margin-top: 50px;
 }
 #main #gallery .sec-photo .gallery-you-tit {
-  margin: 70px 20px 0 0;
+  margin: 130px 20px 0 0;
   font-size: 70px;
   writing-mode: vertical-rl;
   font-weight: 600;
 }
 #main #gallery .sec-photo .youtube-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 130px;
 }
 #main #gallery .sec-photo .youtube-box .youtube-thumb {
   width: 560px;
   height: 315px;
   background: #979797;
 }
+#main #gallery .sec-photo .youtube-txt {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+#main #gallery .sec-photo .more-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#main #gallery .sec-photo .spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#main #gallery .sec-photo .svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+}
+#main #gallery .sec-photo .shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #383838;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#main #gallery .sec-photo .text {
+  margin-top: -35px;
+  text-align: center;
+}
+#main #gallery .sec-photo .text a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18px;
+}
+#main #gallery .sec-photo .svg-wrapper:hover .shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #000;
+}
 #main #gallery .sec-photo .photo-txt {
   display: flex;
-  align-items: center;
-}
-#main #gallery .sec-photo .photo-txt span {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 50px;
-}
-#main #gallery .sec-photo .photo-txt p {
-  margin: 20px 0 50px;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 30px;
+  justify-content: center;
+  margin: 100px;
 }
 #main #gallery .sec-photo .more-btn {
   position: relative;
@@ -1283,12 +1346,12 @@
 }
 #main #community {
   position: absolute;
-  top: 490vh;
+  top: 520vh;
   left: 0;
   width: 100%;
   height: 100vh;
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #f4f9fb;
   z-index: 1;
 }
 #main #community .community-wrap {
@@ -1296,7 +1359,7 @@
   align-items: center;
 }
 #main #community .community-wrap h2 {
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 #main #community .container {
   /* The typing effect */
@@ -1307,9 +1370,9 @@
   justify-content: center !important;
 }
 #main #community .container h2 {
-  color: #fff;
+  color: #000;
   overflow: hidden;
-  border-right: 0.05em solid #000;
+  border-right: 0.05em solid #fff;
   white-space: nowrap;
   animation: none;
   opacity: 0;
@@ -1330,7 +1393,7 @@
     opacity: 1;
   }
   50% {
-    border-color: #fff;
+    border-color: #000;
     opacity: 1;
   }
 }
@@ -1402,7 +1465,7 @@
 
 .mouse-text {
   position: absolute;
-  color: #33503c;
+  color: #000;
   font-size: 1.5em;
   -webkit-user-select: none;
      -moz-user-select: none;
