@@ -8,6 +8,11 @@
   --dark: #000;
 }
 
+.wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .section-g {
   padding: 100px 0;
 }
@@ -83,8 +88,8 @@
   }
 }
 #jumbotron .sgv-container .main-ani2 {
-  top: 150px;
-  right: 21rem;
+  top: 130px;
+  right: 300px;
   width: 100px;
   animation: rotation2 2s infinite linear;
   transform-origin: left;
@@ -105,7 +110,7 @@
 }
 #jumbotron .sgv-container .main-ani3 {
   top: 0;
-  right: 120px;
+  right: 20px;
   width: 100px;
   animation: rotation3 3s infinite linear;
   transform-origin: right;
@@ -150,7 +155,7 @@
 }
 #jumbotron .sgv-container .main-ani5 {
   top: 0;
-  left: 840px;
+  left: 770px;
   width: 100px;
   animation: rotation5 3s infinite linear;
   transform-origin: center;
@@ -254,8 +259,8 @@
   }
 }
 #jumbotron .sgv-container .main-ani10 {
-  top: 88px;
-  right: 24rem;
+  top: 80px;
+  right: 350px;
   width: 100px;
   animation: rotation10 2s infinite linear;
   transform-origin: left;
@@ -278,7 +283,7 @@
   position: absolute;
   top: -1280px;
   left: -250px;
-  width: 118.75rem;
+  width: 1900px;
   z-index: 10;
 }
 #jumbotron .sgv-container .bg-sky .cls-1 {
@@ -318,9 +323,10 @@
 #jumbotron .main-txt-wrap .img-text-1 {
   position: absolute;
   top: 14rem;
-  left: 34rem;
+  left: 50%;
+  transform: translateX(-180%);
   z-index: 1;
-  font-size: 50px;
+  font-size: 3.4vw;
   font-weight: 800;
   letter-spacing: -5px;
 }
@@ -330,7 +336,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  font-size: 150px;
+  font-size: 8.417vw;
   font-weight: 900;
 }
 #jumbotron .main-txt-wrap .img-text-3 {
@@ -339,7 +345,7 @@
   left: 50%;
   transform: translateX(-49%);
   z-index: 1;
-  font-size: 150px;
+  font-size: 8.417vw;
   font-weight: 900;
   color: #00c1cc;
 }
@@ -397,6 +403,33 @@
   color: #1c1c1b;
 }
 
+@media only screen and (max-width: 1024px) {
+  #main #jumbotron .sgv-container .main-ani1 {
+    top: 100px;
+    right: 15%;
+  }
+  #main #jumbotron .sgv-container .main-ani2 {
+    display: none;
+  }
+  #main #jumbotron .sgv-container .main-ani3 {
+    top: 50px;
+  }
+  #main #jumbotron .sgv-container .main-ani4 {
+    display: none;
+  }
+  #main #jumbotron .sgv-container .main-ani5 {
+    left: 724px;
+  }
+  #main #jumbotron .sgv-container .main-ani7 {
+    left: 156px;
+  }
+  #main #jumbotron .sgv-container .main-ani8 {
+    left: 497px;
+  }
+  #main #jumbotron .sgv-container .main-ani10 {
+    display: none;
+  }
+}
 #main {
   position: relative;
   overflow: hidden;
@@ -541,6 +574,40 @@
   right: 250px;
   width: 400px;
   transform: scaleX(-1) rotate(15deg);
+}
+@media only screen and (max-width: 1024px) {
+  #main #main #about .container .wrap-thumb .about-ani-txt {
+    font-size: 45px;
+  }
+  #main #main #about .container .wrap-thumb .about-p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  #main #main #about .container .about-p-2 {
+    font-size: 26px;
+  }
+  #main #main #about .container .about-svg-1 {
+    width: 140px;
+  }
+  #main #main #about .container .about-svg-2 {
+    right: 20px;
+    width: 220px;
+  }
+  #main #main #about .container .about-svg-3 {
+    top: 15px;
+    right: 75px;
+    z-index: 1;
+    width: 300px;
+  }
+  #main #main #about .container .about-svg-4 {
+    width: 110px;
+  }
+  #main #main #about .container .about-svg-5 {
+    width: 270px;
+  }
+  #main #main #about .container .about-svg-6 {
+    width: 300px;
+  }
 }
 #main #best {
   position: absolute;
@@ -1091,11 +1158,25 @@
 #main #best .best-txt-2 {
   text-align: right;
   margin-top: 90px;
-  margin-left: 62%;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 30px;
   font-weight: 600;
   color: #000;
+}
+@media only screen and (max-width: 1024px) {
+  #main #main #best .container .best-card {
+    max-width: 300px;
+    width: 300px;
+  }
+  #main #main #best .container .best-card img {
+    max-width: 300px;
+  }
+  #main #main #best .container .best-card .card-txt-tit {
+    padding: 8px 15px 15px;
+  }
+  #main #main #best .container .best-txt-2 {
+    font-size: 26px;
+  }
 }
 #main #gallery {
   position: absolute;
@@ -1219,15 +1300,23 @@
   font-weight: 600;
 }
 #main #gallery .sec-photo .youtube-box {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
   width: 100%;
+  height: 100%;
   margin-top: 130px;
 }
 #main #gallery .sec-photo .youtube-box .youtube-thumb {
-  width: 560px;
-  height: 315px;
-  background: #979797;
+  padding-top: 56.25%;
+  position: relative;
+}
+#main #gallery .sec-photo .youtube-box .youtube-thumb iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 #main #gallery .sec-photo .youtube-txt {
   display: flex;
