@@ -3,7 +3,7 @@
 //     justify-content: flex-end;
 //   }
 // }
-// #637969  #f7d9ac #6ca3b7
+
 :root {
   --sm: 768px;
   --md: 992px;
@@ -291,20 +291,7 @@
         transform: rotate(0deg);
       }
     }
-    // .main-ani11 {
-    //   // position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 30%;
-    //   transform: scaleX(-1);
-    //   .cls-1 {
-    //     fill: none;
-    //     stroke: #1c1c1b;
-    //     stroke-linecap: round;
-    //     stroke-linejoin: round;
-    //     stroke-dasharray: 1.25 4;
-    //   }
-    // }
+
     .bg-sky {
       position: absolute;
       top: -1280px;
@@ -342,7 +329,6 @@
     height: 90vh;
     font-family: "Nanum Gothic", sans-serif;
     background: rgba(248, 243, 243, 0.3);
-    // color: #000;
   }
   .main-txt-wrap {
     position: relative;
@@ -386,7 +372,6 @@
     z-index: 1;
     input {
       position: relative;
-      // text-align: center;
       border: none;
       width: 280px;
       border-bottom: 2px solid #1c1c1b;
@@ -483,7 +468,6 @@
       justify-content: space-between;
     }
     .about-ani-txt {
-      // font-family: "Hahmlet", serif;
       font-family: "Noto Sans KR", sans-serif;
       font-weight: 500;
       font-size: 50px;
@@ -535,124 +519,11 @@
     }
     .about-ani {
       position: relative;
-      // background-position: center;
-      // background-size: 160%;
-      // -webkit-animation: none;
-      // animation: none;
-      // opacity: 0;
-      // -webkit-transform: translateX(-600px);
-      // transform: translateX(-600px);
-      // -webkit-animation-timing-function: ease-in;
-      // animation-timing-function: ease-in;
     }
-    // @-webkit-keyframes bounce-in-left {
-    //   0% {
-    //     -webkit-transform: translateX(-600px);
-    //     transform: translateX(-600px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //     opacity: 0;
-    //   }
-    //   38% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //     opacity: 1;
-    //   }
-    //   55% {
-    //     -webkit-transform: translateX(-68px);
-    //     transform: translateX(-68px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //   }
-    //   72% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //   }
-    //   81% {
-    //     -webkit-transform: translateX(-28px);
-    //     transform: translateX(-28px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //   }
-    //   90% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //   }
-    //   95% {
-    //     -webkit-transform: translateX(-8px);
-    //     transform: translateX(-8px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //   }
-    //   100% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //   }
-    // }
-    // @keyframes bounce-in-left {
-    //   0% {
-    //     -webkit-transform: translateX(-600px);
-    //     transform: translateX(-600px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //     opacity: 0;
-    //   }
-    //   38% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //     opacity: 1;
-    //   }
-    //   55% {
-    //     -webkit-transform: translateX(-68px);
-    //     transform: translateX(-68px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //   }
-    //   72% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //   }
-    //   81% {
-    //     -webkit-transform: translateX(-28px);
-    //     transform: translateX(-28px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //   }
-    //   90% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //   }
-    //   95% {
-    //     -webkit-transform: translateX(-8px);
-    //     transform: translateX(-8px);
-    //     -webkit-animation-timing-function: ease-in;
-    //     animation-timing-function: ease-in;
-    //   }
-    //   100% {
-    //     -webkit-transform: translateX(0);
-    //     transform: translateX(0);
-    //     -webkit-animation-timing-function: ease-out;
-    //     animation-timing-function: ease-out;
-    //     opacity: 1;
-    //   }
-    // }
+
     .about-svg-1 {
       position: absolute;
-      top: 265px;
+      top: 248px;
       right: 240px;
       z-index: 2;
       width: 200px;
@@ -680,7 +551,7 @@
       width: 130px;
       .cls-7 {
         animation: about-rota 5s infinite linear;
-        transform-box: fill-box;
+        // transform-box: fill-box;
         transform-origin: center;
       }
       @keyframes about-rota {
@@ -882,7 +753,6 @@
 
       .best-card-1.showing {
         .best-card {
-          // width: 30%;
           cursor: pointer;
           opacity: 0.6;
           transform: scale(0.88);
@@ -1712,19 +1582,16 @@
 
 .mouse-text span {
   position: absolute;
-  // text-transform: uppercase;
   display: inline-block;
   transform-origin: 0 100px;
   top: -100px;
 }
 
-// footer bg
+// community
 .bg-waves {
   display: block;
-  // width: 100%;
   height: 74px;
   /*Uncomment to see the buffer render area*/
-  /*height:150px;*/
   position: absolute;
   top: 90%;
   left: 50%;

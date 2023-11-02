@@ -188,12 +188,12 @@ class CanvasWaves {
     this.styleWhite = true;
     this.styleWhiteValues = {
       dots: "rgba(155, 175, 190, .5)",
-      waves: "rgba(205, 140, 20, .4)",
+      waves: "rgba(0, 193, 204, .4)",
       background: "#fff",
     };
     this.styleBlackValues = {
       dots: "rgba(140, 160, 175, .8)",
-      waves: "rgba(255, 215, 0, .4)",
+      waves: "rgba(0, 193, 204, .4)",
       background: "#000",
     };
     this.styleColors = {
