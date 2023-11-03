@@ -168,7 +168,7 @@
 
     .main-ani5 {
       top: 0;
-      left: 770px;
+      left: 840px;
       width: 100px;
       animation: rotation5 3s infinite linear;
       transform-origin: center;
@@ -317,7 +317,7 @@
       }
     }
   }
-  img {
+  video {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -332,7 +332,7 @@
     width: 100%;
     height: 90vh;
     font-family: "Nanum Gothic", sans-serif;
-    background: rgba(248, 243, 243, 0.3);
+    background: rgba(248, 243, 243, 0.1);
   }
   .main-txt-wrap {
     position: relative;
@@ -349,7 +349,7 @@
     }
     .img-text-2 {
       position: absolute;
-      top: 260px;
+      top: 290px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
@@ -358,7 +358,7 @@
     }
     .img-text-3 {
       position: absolute;
-      top: 265px;
+      top: 295px;
       left: 50%;
       transform: translateX(-49%);
       z-index: 1;
@@ -1388,7 +1388,7 @@
       }
       .gallery-you-tit {
         margin: 130px 20px 0 0;
-        font-size: 70px;
+        font-size: 73px;
         writing-mode: vertical-rl;
         font-weight: 600;
       }
