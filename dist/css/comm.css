@@ -14,7 +14,7 @@
 }
 
 .section-g {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .section-g h2 {
   width: 100%;
@@ -403,44 +403,19 @@
   color: #1c1c1b;
 }
 
-@media only screen and (max-width: 1024px) {
-  #main #jumbotron .sgv-container .main-ani1 {
-    top: 100px;
-    right: 15%;
-  }
-  #main #jumbotron .sgv-container .main-ani2 {
-    display: none;
-  }
-  #main #jumbotron .sgv-container .main-ani3 {
-    top: 50px;
-  }
-  #main #jumbotron .sgv-container .main-ani4 {
-    display: none;
-  }
-  #main #jumbotron .sgv-container .main-ani5 {
-    left: 724px;
-  }
-  #main #jumbotron .sgv-container .main-ani7 {
-    left: 156px;
-  }
-  #main #jumbotron .sgv-container .main-ani8 {
-    left: 497px;
-  }
-  #main #jumbotron .sgv-container .main-ani10 {
-    display: none;
-  }
-}
 #main {
   position: relative;
   overflow: hidden;
-  height: 620vh;
+  height: 644vh;
 }
-#main #about {
+#main .inner {
   position: absolute;
   top: 90vh;
+  right: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  bottom: 0;
+}
+#main #about {
   background: var(--light);
 }
 #main #about .container {
@@ -575,46 +550,7 @@
   width: 400px;
   transform: scaleX(-1) rotate(15deg);
 }
-@media only screen and (max-width: 1024px) {
-  #main #main #about .container .wrap-thumb .about-ani-txt {
-    font-size: 45px;
-  }
-  #main #main #about .container .wrap-thumb .about-p {
-    font-size: 22px;
-    line-height: 40px;
-  }
-  #main #main #about .container .about-p-2 {
-    font-size: 26px;
-  }
-  #main #main #about .container .about-svg-1 {
-    width: 140px;
-  }
-  #main #main #about .container .about-svg-2 {
-    right: 20px;
-    width: 220px;
-  }
-  #main #main #about .container .about-svg-3 {
-    top: 15px;
-    right: 75px;
-    z-index: 1;
-    width: 300px;
-  }
-  #main #main #about .container .about-svg-4 {
-    width: 110px;
-  }
-  #main #main #about .container .about-svg-5 {
-    width: 270px;
-  }
-  #main #main #about .container .about-svg-6 {
-    width: 300px;
-  }
-}
 #main #best {
-  position: absolute;
-  top: 190vh;
-  left: 0;
-  width: 100%;
-  height: 100vh;
   color: #fff;
   z-index: 1;
   background: #f4f9fb;
@@ -1163,27 +1099,7 @@
   font-weight: 600;
   color: #000;
 }
-@media only screen and (max-width: 1024px) {
-  #main #main #best .container .best-card {
-    max-width: 300px;
-    width: 300px;
-  }
-  #main #main #best .container .best-card img {
-    max-width: 300px;
-  }
-  #main #main #best .container .best-card .card-txt-tit {
-    padding: 8px 15px 15px;
-  }
-  #main #main #best .container .best-txt-2 {
-    font-size: 26px;
-  }
-}
 #main #gallery {
-  position: absolute;
-  top: 290vh;
-  left: 0;
-  width: 100%;
-  height: 230vh;
   background: var(--light);
   z-index: 1;
 }
@@ -1433,16 +1349,13 @@
   stroke: #000;
 }
 #main #community {
-  position: absolute;
-  top: 520vh;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  height: 100%;
   color: #000;
   background: #f4f9fb;
   z-index: 1;
 }
 #main #community .community-wrap {
+  position: relative;
   flex-direction: column;
   align-items: center;
 }
@@ -1580,10 +1493,10 @@
 
 .bg-waves {
   display: block;
-  height: 74px;
+  height: 60px;
   /*Uncomment to see the buffer render area*/
   position: absolute;
-  top: 90%;
+  top: 110%;
   left: 50%;
   overflow: hidden;
   transform: translate(-50%, -50%);
@@ -1591,4 +1504,184 @@
 
 .bg-waves #canvas-waves {
   display: block;
+}
+
+@media screen and (max-width: 1440px) {
+  #main #jumbotron .sgv-container .main-ani5 {
+    left: 760px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main #jumbotron .sgv-container .main-ani2 {
+    top: 120px;
+    right: 160px;
+  }
+  #main #jumbotron .sgv-container .main-ani3 {
+    top: 35px;
+    right: 10px;
+    width: 90px;
+  }
+  #main #jumbotron .sgv-container .main-ani4 {
+    display: none;
+  }
+  #main #jumbotron .sgv-container .main-ani10 {
+    right: 230px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main #jumbotron .sgv-container .main-ani1 {
+    top: 100px;
+    right: 15%;
+  }
+  #main #jumbotron .sgv-container .main-ani2 {
+    display: none;
+  }
+  #main #jumbotron .sgv-container .main-ani3 {
+    top: 50px;
+  }
+  #main #jumbotron .sgv-container .main-ani4 {
+    display: none;
+  }
+  #main #jumbotron .sgv-container .main-ani5 {
+    left: 724px;
+  }
+  #main #jumbotron .sgv-container .main-ani7 {
+    left: 156px;
+  }
+  #main #jumbotron .sgv-container .main-ani8 {
+    left: 497px;
+  }
+  #main #jumbotron .sgv-container .main-ani10 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main #about .container .wrap-thumb .about-ani-txt {
+    font-size: 45px;
+  }
+  #main #about .container .wrap-thumb .about-p {
+    font-size: 25px;
+    line-height: 43px;
+    letter-spacing: -2px;
+  }
+  #main #about .container .about-p-2 {
+    font-size: 27px;
+  }
+  #main #about .container .about-svg-1 {
+    width: 180px;
+  }
+  #main #about .container .about-svg-2 {
+    width: 230px;
+  }
+  #main #about .container .about-svg-3 {
+    width: 320px;
+  }
+  #main #about .container .about-svg-4 {
+    width: 110px;
+  }
+  #main #about .container .about-svg-5 {
+    width: 320px;
+  }
+  #main #about .container .about-svg-6 {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main #about .container .wrap-thumb .about-ani-txt {
+    font-size: 45px;
+  }
+  #main #about .container .wrap-thumb .about-p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  #main #about .container .about-p-2 {
+    font-size: 26px;
+  }
+  #main #about .container .about-svg-1 {
+    width: 140px;
+  }
+  #main #about .container .about-svg-2 {
+    right: 20px;
+    width: 220px;
+  }
+  #main #about .container .about-svg-3 {
+    top: 15px;
+    right: 75px;
+    z-index: 1;
+    width: 300px;
+  }
+  #main #about .container .about-svg-4 {
+    width: 110px;
+  }
+  #main #about .container .about-svg-5 {
+    width: 270px;
+  }
+  #main #about .container .about-svg-6 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #main #best .container .best-card {
+    max-width: 360px;
+    width: 360px;
+  }
+  #main #best .container .best-card .card-image {
+    max-width: 360px;
+  }
+  #main #best .container .best-card .card-txt-tit {
+    padding: 8px 15px 15px;
+  }
+  #main #best .container .best-txt-2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main #best .container .best-card {
+    max-width: 330px;
+    width: 330px;
+  }
+  #main #best .container .best-card .card-image {
+    max-width: 330px;
+  }
+  #main #best .container .best-card .card-txt-tit {
+    padding: 8px 15px 15px;
+  }
+  #main #best .container .best-txt-2 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main #best .container .best-card {
+    max-width: 300px;
+    width: 300px;
+  }
+  #main #best .container .best-card .card-image {
+    max-width: 300px;
+  }
+  #main #best .container .best-card .card-txt-tit {
+    padding: 8px 15px 15px;
+  }
+  #main #best .container .best-txt-2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main #gallery .sec-photo .gallery-you-tit {
+    font-size: 63px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main #gallery .sec-photo .gallery-you-tit {
+    font-size: 53px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main {
+    height: 630vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main {
+    height: 600vh;
+  }
 }/*# sourceMappingURL=comm.css.map */

@@ -27,7 +27,7 @@
   margin: 0 auto;
 }
 .section-g {
-  padding: 100px 0;
+  padding: 150px 0;
   h2 {
     width: 100%;
     font-size: 100px;
@@ -416,51 +416,24 @@
     }
   }
 }
-@media only screen and (max-width: 1024px) {
-  #main {
-    #jumbotron {
-      .sgv-container {
-        .main-ani1 {
-          top: 100px;
-          right: 15%;
-        }
-        .main-ani2 {
-          display: none;
-        }
-        .main-ani3 {
-          top: 50px;
-        }
-        .main-ani4 {
-          display: none;
-        }
-        .main-ani5 {
-          left: 724px;
-        }
-        .main-ani7 {
-          left: 156px;
-        }
-        .main-ani8 {
-          left: 497px;
-        }
-        .main-ani10 {
-          display: none;
-        }
-      }
-    }
-  }
-}
+
 #main {
   position: relative;
   overflow: hidden;
-
-  height: 620vh;
-
-  #about {
+  height: 644vh;
+  .inner {
     position: absolute;
     top: 90vh;
+    right: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
+    bottom: 0;
+  }
+  #about {
+    // position: absolute;
+    // top: 90vh;
+    // left: 0;
+    // width: 100%;
+    // height: 100vh;
     background: var(--light);
     .container {
       overflow: hidden;
@@ -619,54 +592,12 @@
     }
   }
 
-  @media only screen and (max-width: 1024px) {
-    #main {
-      #about {
-        .container {
-          .wrap-thumb {
-            .about-ani-txt {
-              font-size: 45px;
-            }
-            .about-p {
-              font-size: 22px;
-              line-height: 40px;
-            }
-          }
-          .about-p-2 {
-            font-size: 26px;
-          }
-          .about-svg-1 {
-            width: 140px;
-          }
-          .about-svg-2 {
-            right: 20px;
-            width: 220px;
-          }
-          .about-svg-3 {
-            top: 15px;
-            right: 75px;
-            z-index: 1;
-            width: 300px;
-          }
-          .about-svg-4 {
-            width: 110px;
-          }
-          .about-svg-5 {
-            width: 270px;
-          }
-          .about-svg-6 {
-            width: 300px;
-          }
-        }
-      }
-    }
-  }
   #best {
-    position: absolute;
-    top: 190vh;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    // position: absolute;
+    // top: 191vh;
+    // left: 0;
+    // width: 100%;
+    // height: 100vh;
     color: #fff;
     z-index: 1;
     background: #f4f9fb;
@@ -1245,34 +1176,13 @@
       color: #000;
     }
   }
-  @media only screen and (max-width: 1024px) {
-    #main {
-      #best {
-        .container {
-          .best-card {
-            max-width: 300px;
-            width: 300px;
-            img {
-              max-width: 300px;
-            }
-            .card-txt-tit {
-              padding: 8px 15px 15px;
-            }
-          }
-          .best-txt-2 {
-            font-size: 26px;
-          }
-        }
-      }
-    }
-  }
 
   #gallery {
-    position: absolute;
-    top: 290vh;
-    left: 0;
-    width: 100%;
-    height: 230vh;
+    // position: absolute;
+    // top: 298vh;
+    // left: 0;
+    // width: 100%;
+    // height: 230vh;
     background: var(--light);
     z-index: 1;
     .container {
@@ -1538,17 +1448,19 @@
       }
     }
   }
+
   // community
   #community {
-    position: absolute;
-    top: 520vh;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    // position: absolute;
+    // top: 537vh;
+    // left: 0;
+    // width: 100%;
+    height: 100%;
     color: #000;
     background: #f4f9fb;
     z-index: 1;
     .community-wrap {
+      position: relative;
       flex-direction: column;
       align-items: center;
       h2 {
@@ -1700,10 +1612,10 @@
 // community
 .bg-waves {
   display: block;
-  height: 74px;
+  height: 60px;
   /*Uncomment to see the buffer render area*/
   position: absolute;
-  top: 90%;
+  top: 110%;
   left: 50%;
   overflow: hidden;
   -webkit-transform: translate(-50%, -50%);
@@ -1713,4 +1625,252 @@
 }
 .bg-waves #canvas-waves {
   display: block;
+}
+
+@media screen and (max-width: 1440px) {
+  #main {
+    #jumbotron {
+      .sgv-container {
+        .main-ani5 {
+          left: 760px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main {
+    #jumbotron {
+      .sgv-container {
+        .main-ani2 {
+          top: 120px;
+          right: 160px;
+        }
+        .main-ani3 {
+          top: 35px;
+          right: 10px;
+          width: 90px;
+        }
+        .main-ani4 {
+          display: none;
+        }
+        .main-ani10 {
+          right: 230px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main {
+    #jumbotron {
+      .sgv-container {
+        .main-ani1 {
+          top: 100px;
+          right: 15%;
+        }
+        .main-ani2 {
+          display: none;
+        }
+        .main-ani3 {
+          top: 50px;
+        }
+        .main-ani4 {
+          display: none;
+        }
+        .main-ani5 {
+          left: 724px;
+        }
+        .main-ani7 {
+          left: 156px;
+        }
+        .main-ani8 {
+          left: 497px;
+        }
+        .main-ani10 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main {
+    #about {
+      // h2 {
+      //   font-size: 90px;
+      // }
+      .container {
+        .wrap-thumb {
+          .about-ani-txt {
+            font-size: 45px;
+          }
+          .about-p {
+            font-size: 25px;
+            line-height: 43px;
+            letter-spacing: -2px;
+          }
+        }
+        .about-p-2 {
+          font-size: 27px;
+        }
+        .about-svg-1 {
+          width: 180px;
+        }
+        .about-svg-2 {
+          width: 230px;
+        }
+        .about-svg-3 {
+          width: 320px;
+        }
+        .about-svg-4 {
+          width: 110px;
+        }
+        .about-svg-5 {
+          width: 320px;
+        }
+        .about-svg-6 {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main {
+    #about {
+      .container {
+        .wrap-thumb {
+          .about-ani-txt {
+            font-size: 45px;
+          }
+          .about-p {
+            font-size: 22px;
+            line-height: 40px;
+          }
+        }
+        .about-p-2 {
+          font-size: 26px;
+        }
+        .about-svg-1 {
+          width: 140px;
+        }
+        .about-svg-2 {
+          right: 20px;
+          width: 220px;
+        }
+        .about-svg-3 {
+          top: 15px;
+          right: 75px;
+          z-index: 1;
+          width: 300px;
+        }
+        .about-svg-4 {
+          width: 110px;
+        }
+        .about-svg-5 {
+          width: 270px;
+        }
+        .about-svg-6 {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  #main {
+    #best {
+      .container {
+        .best-card {
+          max-width: 360px;
+          width: 360px;
+          .card-image {
+            max-width: 360px;
+          }
+          .card-txt-tit {
+            padding: 8px 15px 15px;
+          }
+        }
+        .best-txt-2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #main {
+    #best {
+      .container {
+        .best-card {
+          max-width: 330px;
+          width: 330px;
+          .card-image {
+            max-width: 330px;
+          }
+          .card-txt-tit {
+            padding: 8px 15px 15px;
+          }
+        }
+        .best-txt-2 {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main {
+    #best {
+      .container {
+        .best-card {
+          max-width: 300px;
+          width: 300px;
+          .card-image {
+            max-width: 300px;
+          }
+          .card-txt-tit {
+            padding: 8px 15px 15px;
+          }
+        }
+        .best-txt-2 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main {
+    #gallery {
+      .sec-photo {
+        .gallery-you-tit {
+          font-size: 63px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main {
+    #gallery {
+      .sec-photo {
+        .gallery-you-tit {
+          font-size: 53px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main {
+    height: 630vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #main {
+    height: 600vh;
+  }
 }
